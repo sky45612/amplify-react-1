@@ -8,25 +8,11 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
-    return (
-
-    // document.body.style.backgroundColor = "#282c34",
-
-    
-
-    // <div className="App">
-    //   <header className="App-header">
-    //     <h1>Tutorial pages</h1>    
-    //     <ul>
-    //       <li>test</li>
-    //     </ul>           
-    //   </header>
-    // </div>        
+    return (    
 
       <Router>
         <div className="App">
-          <header className="App-header">
-            <h1>Tutorial pages</h1>          
+          <header className="App-header">                    
             <ul>              
               <li>
                 <Link to="/">Home</Link>                

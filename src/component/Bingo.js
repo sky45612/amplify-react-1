@@ -1,6 +1,7 @@
 import React from 'react';
 import './Bingo.css';
 
+
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -100,6 +101,7 @@ class Board extends React.Component {
 class Game extends React.Component {
   render() {
     return (
+      document.body.style.backgroundColor = "#abacaf",
       <div className="game">
         <div className="game-board">
           <Board />
