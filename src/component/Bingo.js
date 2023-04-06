@@ -102,14 +102,18 @@ class Game extends React.Component {
   render() {
     return (
       document.body.style.backgroundColor = "#abacaf",
-      <div className="game">
-        <div className="game-board">
-          <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
+      <div>
+        <header class="App-header">
+          <div className="game">
+            <div className="game-board">
+              <Board />
+            </div>
+            <div className="game-info">
+              <div>{/* status */}</div>
+              <ol>{/* TODO */}</ol>
+            </div>
+          </div>
+        </header>
       </div>
     );
   }
