@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Bingo from  './Bingo.js'
+
 
 function App() {
   return (
+
+    document.body.style.backgroundColor = "#282c34",  
+
+
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <h1>Tutorial pages</h1>
+        
+        {/*<ul>
+          <li><a href="./Bingo.js">Bingo</a></li>
+        </ul>*/}
+        
       </header>
-    </div>
+    </div>     
+
   );
 }
 
