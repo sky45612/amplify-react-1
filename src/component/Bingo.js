@@ -102,7 +102,7 @@ class Game extends React.Component {
   render() {
     return (      
       <div>
-        <header class="App-header">
+        <header className="App-header">
           <div className="game">
             <div className="game-board">
               <Board />
