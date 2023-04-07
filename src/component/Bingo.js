@@ -100,8 +100,7 @@ class Board extends React.Component {
 
 class Game extends React.Component {
   render() {
-    return (
-      document.body.style.backgroundColor = "#abacaf",
+    return (      
       <div>
         <header class="App-header">
           <div className="game">

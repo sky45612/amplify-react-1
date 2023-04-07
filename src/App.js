@@ -1,17 +1,18 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import Bingo from  '../src/component/Bingo.js';
 import Home from '../src/component/Home.js';
 // import React, { useState } from "react";
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Navbar from './component/Navbar';
 
 class App extends Component {
   render() {
     return (    
 
       <Router>
-        <div className="App">
+        {/* <div>
           <header className="App-header">                    
             <ul>              
               <li>
@@ -26,7 +27,12 @@ class App extends Component {
               <Route exact path="/bingo" element={<Bingo />}></Route>
             </Routes>
           </header>
-        </div>
+        </div> */}
+        <Navbar />
+        <Routes>
+          <Route path='/' Component={Home}/>
+          <Route path='/bingo' Component={Bingo}/>
+        </Routes>        
       </Router>
     )
     
