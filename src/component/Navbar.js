@@ -30,7 +30,7 @@ function Navbar() {
     
 
     return (
-        <>
+        <div>
             <div className='navBar'>
                 <Link to='#' className='menuBar'>
                     <FaIcons.FaBars className='navBarIcon' onClick={showSideBar}/>
@@ -63,7 +63,7 @@ function Navbar() {
                     </ul>
                 </nav>
             </div>        
-        </>
+        </div>
         
         
     );

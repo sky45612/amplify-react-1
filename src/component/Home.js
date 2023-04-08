@@ -4,7 +4,7 @@ import '../App.css';
 
 function Home() {
   return (   
-    document.body.style.backgroundColor = "#c5c5c5",
+    // document.body.style.backgroundColor = "#c5c5c5",
     <div>
       <header className="homeHeader">
         Tutorial Pages
