@@ -2,6 +2,7 @@
 // import './App.css';
 import Bingo from  '../src/component/Bingo.js';
 import Home from '../src/component/Home.js';
+import ToDoList from '../src/component/ToDoList.js';
 // import React, { useState } from "react";
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -32,6 +33,7 @@ class App extends Component {
         <Routes>
           <Route path='/' Component={Home}/>
           <Route path='/bingo' Component={Bingo}/>
+          <Route path='/todoLIst' Component={ToDoList}/>
         </Routes>        
       </Router>
     )

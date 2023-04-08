@@ -15,5 +15,10 @@ export const NavbarNavigation = [
         title: 'Bingo',
         path: '/bingo',
         icon: <IoIcons.IoMdCloseCircleOutline />
+    },
+    {
+        title: 'ToDoList',
+        path: '/todoList',
+        icon: <FaIcons.FaCheck />
     }
 ];
