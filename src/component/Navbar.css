@@ -17,9 +17,8 @@
     background:none;
 }
 
-.navMenu {    
-    background:none;
-    font-size:2rem;
+.navMenuDiv {
+    visibility: visible;
 }
 
 .navMenu-closed {    
@@ -28,7 +27,7 @@
     display: flex;
     position: fixed;
     height: 100vh;
-    transition:0.5s;
+    transition:1s;
 }
 
 .navMenu-open {
@@ -38,12 +37,13 @@
     color:white;
     display: flex;
     position:fixed;
-    transition:0.5s;
+    transition:1s;
 }
 
 .navMenuItemList {
-    transition:0.5s;
+    transition:1s;
 }
+
 
 .navText {
     color: white;

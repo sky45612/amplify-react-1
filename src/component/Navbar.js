@@ -15,9 +15,16 @@ function Navbar() {
     const [sidebar, setSidebar] = useState(false);
     const iconStyle = {marginLeft: '1rem'};
     function showSideBar() {
-        // console.log(sidebar);
-        setSidebar(!sidebar);
-
+        
+        setSidebar(!sidebar);   
+        // console.log(sidebar);                
+        if (!sidebar) {
+            // console.log(sidebar);
+            document.getElementById("navMenuItemList-id").style.display="block";
+        }
+        else {
+            document.getElementById("navMenuItemList-id").style.display="none";
+        }
         return sidebar;
     }  
     
@@ -29,22 +36,32 @@ function Navbar() {
                     <FaIcons.FaBars className='navBarIcon' onClick={showSideBar}/>
                 </Link>
             </div>
-            <div>
-            <nav className={sidebar ? 'navMenu-open' : 'navMenu-closed'}>
-                <ul className='navMenuItemList' onClick={showSideBar}>
-                    {/* <li className='navMenuItem'>
-                        <Link to="#" className='navMenu'>
-                            <AiIcons.AiOutlineClose className='navText'/>
-                        </Link>
-                    </li> */}
-                    <li className='navMenuItem'>
-                        <Link to="/" className="navText"><AiIcons.AiFillHome /><span style={iconStyle}>Home</span></Link>
-                    </li>
-                    <li className='navMenuItem'>
-                        <Link to="/bingo" className="navText"><IoIcons.IoMdCloseCircleOutline /><span style={iconStyle}>Bingo</span></Link>
-                    </li>
-                </ul>
-            </nav>
+            <div id='navMenuDiv-id' className='navMenuDiv'>
+                <nav className={sidebar ? 'navMenu-open' : 'navMenu-closed'}>                
+                    <ul id='navMenuItemList-id' className='navMenuItemList'>
+                        {/* <li className='navMenuItem'>
+                            <Link to="#" className='navMenu'>
+                                <AiIcons.AiOutlineClose className='navText'/>
+                            </Link>
+                        </li> */}
+                        {/* <li className='navMenuItem'>
+                            <Link to="/" className="navText"><AiIcons.AiFillHome /><span style={iconStyle}>Home</span></Link>
+                        </li>
+                        <li className='navMenuItem'>
+                            <Link to="/bingo" className="navText"><IoIcons.IoMdCloseCircleOutline /><span style={iconStyle}>Bingo</span></Link>
+                        </li> */}
+                        {NavbarNavigation.map((item, index) => {
+                            return (
+                                <li key={index} className={item.cName}>
+                                    <Link className="navText" to={item.path}>
+                                        {item.icon}
+                                        <span style={iconStyle}>{item.title}</span>
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </nav>
             </div>        
         </>
         

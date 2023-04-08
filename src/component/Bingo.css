@@ -7,10 +7,6 @@ ol, ul {
   padding-left: 30px;
 }
 
-.board-row {
-
-}
-
 .board-row:after {
   clear: both;
   content: "";
@@ -52,11 +48,6 @@ ol, ul {
 .gameContainer {
   margin-left:10rem;
   text-align: center;
-}
-
-
-.game-board {
-
 }
 
 .game-info {
