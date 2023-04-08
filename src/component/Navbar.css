@@ -24,7 +24,7 @@
 
 .navMenu-closed {    
     visibility: hidden;
-    width: 5rem;
+    width: 0rem;
     display: flex;
     position: fixed;
     height: 100vh;
@@ -33,7 +33,7 @@
 .navMenu-open {
     background-color: #3f4a7a;
     width:10rem;
-    height: 100vh;
+    height: 91vh;
     color:white;
     display: flex;
     position:fixed;
