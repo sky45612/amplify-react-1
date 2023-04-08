@@ -24,10 +24,11 @@
 
 .navMenu-closed {    
     visibility: hidden;
-    width: 0rem;
+    width: 10rem;
     display: flex;
     position: fixed;
     height: 100vh;
+    transition:0.5s;
 }
 
 .navMenu-open {
@@ -37,12 +38,23 @@
     color:white;
     display: flex;
     position:fixed;
+    transition:0.5s;
+}
+
+.navMenuItemList {
+    transition:0.5s;
 }
 
 .navText {
     color: white;
+    text-decoration: none;
+    font-size: medium;
 }
 
 body {
     margin:0%;
+}
+
+ul {
+    list-style-type: none;
 }
