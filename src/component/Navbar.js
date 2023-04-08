@@ -28,11 +28,11 @@ function Navbar() {
             </div>
             <nav className={sidebar ? 'navMenu-open' : 'navMenu-closed'}>
                 <ul className='navMenuItemList' onClick={showSideBar}>
-                    <li className='navMenuItem'>
+                    {/* <li className='navMenuItem'>
                         <Link to="#" className='navMenu'>
                             <AiIcons.AiOutlineClose className='navText'/>
                         </Link>
-                    </li>
+                    </li> */}
                     <li className='navMenuItem'>
                         <Link to="/" className="navText">Home</Link>
                     </li>

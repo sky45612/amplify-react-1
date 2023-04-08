@@ -23,17 +23,20 @@
 }
 
 .navMenu-closed {    
+    visibility: hidden;
+    width: 5rem;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+}
+
+.navMenu-open {
     background-color: #3f4a7a;
-    width:5rem;
+    width:10rem;
     height: 100vh;
     color:white;
     display: flex;
     position:fixed;
-    
-}
-
-.navMenu-open {
-    left: 0;
 }
 
 .navText {
